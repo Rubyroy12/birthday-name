@@ -16,6 +16,7 @@
 <body>
     <div class="container">
 
+       <div class="jumbotron jumbotron-fluid">
         <h2>welcome...</h2>
         <p>Free and fast website</p><br>
         <p>Know you day of wek when you were born with justa simple click</p> emoji <br>
@@ -24,22 +25,24 @@
         <p>sounds intresting , right?</p>
 
 
+       </div>
+
         <a class="btn btn-primary" href="#akan">Get started</a>
 
         <div class="card">
             <p class="h2 text-white bg-info">Enter your date of birth</p>
 
 
-            Date: <input id="date">
+            Date: <input id="date" placeholder="00">
             <p id="dval"></p>
-            Month:<input id="month" >
+            Month:<input id="month" placeholder="00" >
             Year:<input id="year" name="year" placeholder="1996">
             <br>
             <button class="btn btn-success" onclick="thisDate()">Submit</button>
             Date: <p id="todate"><span id="dt1"></span>/ <span id="dt2"></span> /<span id="dt3"></span></p>
 
             <br>
-            <p>Day of the week: <span id="dw1"></span> </p>
+            <p>Date of the week: <span id="dw1"></span> </p>
             <p>Day of the week: <span id="dw2"></span> </p>
             <p>Akan Name: <span id="akan"></span></p>
 

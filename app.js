@@ -69,12 +69,24 @@ function thisDate() {
         //      alert("")
         //  }
         //const dyb = Date.Parse(document.getElementById('todate').value);
-       let  newdy = dy.toFixed();
+       const  i = dy.toFixed();
        var days =["sunday","Monday", "Tuesday" , "Wednesday","Thursday" , "Friday", "Saturday"];
+       var male= ["Kwasi", "Kwadwo" , "Kwabena","Kwaku", "Yaw","Kofi", "Kwame"];
+
+    //    if(checkbox(male)==checked){
+    //        alert("");
+    //    }if(checkbox(male)==checked){
+    //        alert("");
+    //    }
+
+        document.getElementById('dw1').innerHTML =  "Date " + i +" of the week";
+        document.getElementById('dw2').innerHTML = "You wer born on " + days[i];
+        document.getElementById('dw2').style.color="red";
+        document.getElementById('dw2').style.fontSize="15px";
+        document.getElementById('akan').innerHTML= "Your Akan Name is " + male[i];
 
 
-        document.getElementById('dw1').innerHTML =  "Date is " + dy;
-        document.getElementById('dw2').innerHTML =  "Date is " + newdy;
+
 
     }
     get_day();
