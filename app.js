@@ -74,8 +74,8 @@ function thisDate() {
         let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
         let female= ["Akosua","Adwoa", "Abena","Akua","Yaa","Afua","Ama"];
 
-        // var gender = document.querySelector("#cb1");
-        // if (gender.checked) {
+        var gender = document.querySelector("#cb1");
+        if (gender.checked) {
 
             document.getElementById('dw2').innerHTML = "You wer born on " + days[i];
             document.getElementById('akan').innerHTML = "Your Akan Name is " + male[i];
