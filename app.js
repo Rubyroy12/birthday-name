@@ -1,12 +1,3 @@
-// function to validate input Dates
-//let dd = parseInt(document.getElementById('date').value);
-//var  mm = Number(document.getElementById('month').value);
-//var yy = Number(document.getElementById('year').value);
-
-
-
-
-
 
 
 function thisDate() {
@@ -63,21 +54,19 @@ function thisDate() {
     //function to get day
 
     function get_day() {
-        // var day = dd.getDay();
+        
         var dy = (dd % 7)
-        //  for(dy=0;dy<5; dy++){
-        //      alert("")
-        //  }
-        //const dyb = Date.Parse(document.getElementById('todate').value);
+        
         const i = dy.toFixed();
         let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
         let female= ["Akosua","Adwoa", "Abena","Akua","Yaa","Afua","Ama"];
 
         var gender = document.querySelector("#cb1");
+        //Logic to validate date
         if (gender.checked) {
 
-            document.getElementById('dw2').innerHTML = "You wer born on " + days[i];
+            document.getElementById('dw2').innerHTML = "You were born on " + days[i];
             document.getElementById('akan').innerHTML = "Your Akan Name is " + male[i];
 
         }else{
@@ -86,12 +75,7 @@ function thisDate() {
 
         }
 
-        // document.getElementById('dw1').innerHTML =  "Date " + i +" of the week";
-
-        // document.getElementById('dw2').style.color="red";
-        // document.getElementById('dw2').style.fontSize="15px";
-
-
+        
 
 
 
@@ -101,4 +85,3 @@ function thisDate() {
 
 }
 
-// var day
