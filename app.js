@@ -64,9 +64,14 @@ function thisDate() {
     function get_day() {
         // var day = dd.getDay();
          var dy= (dd%6)
+        //  for(dy=0;dy<5; dy++){
+        //      alert("")
+        //  }
         //const dyb = Date.Parse(document.getElementById('todate').value);
        let  newdy = dy.toFixed();
-       
+       var days =["sunday","Monday", "Tuesday" , "Wednesday","Thursday" , "Friday", "Saturday"];
+
+
         document.getElementById('dw1').innerHTML =  "Date is " + dy;
         document.getElementById('dw2').innerHTML =  "Date is " + newdy;
 
