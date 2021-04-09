@@ -58,32 +58,40 @@ function thisDate() {
         }
     }
     yearValidation();
-    document.getElementById('todate').style.display="block"
+    document.getElementById('todate').style.display = "block"
 
     //function to get day
 
     function get_day() {
         // var day = dd.getDay();
-         var dy= (dd%6)
+        var dy = (dd % 7)
         //  for(dy=0;dy<5; dy++){
         //      alert("")
         //  }
         //const dyb = Date.Parse(document.getElementById('todate').value);
-       const  i = dy.toFixed();
-       var days =["sunday","Monday", "Tuesday" , "Wednesday","Thursday" , "Friday", "Saturday"];
-       var male= ["Kwasi", "Kwadwo" , "Kwabena","Kwaku", "Yaw","Kofi", "Kwame"];
+        const i = dy.toFixed();
+        let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+        let female= ["Akosua","Adwoa", "Abena","Akua","Yaa","Afua","Ama"];
 
-    //    if(checkbox(male)==checked){
-    //        alert("");
-    //    }if(checkbox(male)==checked){
-    //        alert("");
-    //    }
+        // var gender = document.querySelector("#cb1");
+        // if (gender.checked) {
 
-        document.getElementById('dw1').innerHTML =  "Date " + i +" of the week";
-        document.getElementById('dw2').innerHTML = "You wer born on " + days[i];
-        document.getElementById('dw2').style.color="red";
-        document.getElementById('dw2').style.fontSize="15px";
-        document.getElementById('akan').innerHTML= "Your Akan Name is " + male[i];
+            document.getElementById('dw2').innerHTML = "You wer born on " + days[i];
+            document.getElementById('akan').innerHTML = "Your Akan Name is " + male[i];
+
+        }else{
+            document.getElementById('dw2').innerHTML = "You were born on " + days[i];
+            document.getElementById('akan').innerHTML = "Your Akan Name is " + female[i];
+
+        }
+
+        // document.getElementById('dw1').innerHTML =  "Date " + i +" of the week";
+
+        // document.getElementById('dw2').style.color="red";
+        // document.getElementById('dw2').style.fontSize="15px";
+
+
 
 
 
