@@ -1,11 +1,14 @@
-
+//Function to validate the form
 
 function thisDate() {
     var dd = Number(document.getElementById('date').value);
     var mm = Number(document.getElementById('month').value);
     var yy = Number(document.getElementById('year').value);
-
+    //Function to validate the date entered by the user
     function dateValidation() {
+
+        // Logic 
+
         if (isNaN(dd) || dd < 1 || dd > 31) {
             alert("Invalid Date");
             document.getElementById('date').value = " ";
@@ -23,6 +26,8 @@ function thisDate() {
 
     //function to validate month
     function monthValidation() {
+        //Logic
+
         if (isNaN(mm) || mm < 1 || mm > 12) {
             alert("Invalid month");
             document.getElementById('month').value = " ";
@@ -37,8 +42,11 @@ function thisDate() {
         }
     }
     monthValidation();
-    //    function to validate year
+    //Function to validate year
     function yearValidation() {
+
+        //Logic 
+
         if (isNaN(yy) || yy < 1950 || yy > 2021) {
             alert("Invalid year");
             document.getElementById('year').value = " ";
@@ -51,31 +59,31 @@ function thisDate() {
     yearValidation();
     document.getElementById('todate').style.display = "block"
 
-    //function to get day
+    //Function to get day
 
     function get_day() {
-        
+
         var dy = (dd % 7)
-        
+
         const i = dy.toFixed();
         let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-        let female= ["Akosua","Adwoa", "Abena","Akua","Yaa","Afua","Ama"];
+        let female = ["Akosua", "Adwoa", "Abena", "Akua", "Yaa", "Afua", "Ama"];
 
         var gender = document.querySelector("#cb1");
-        //Logic to validate date
+        //Logic to validate gender chosen 
         if (gender.checked) {
 
             document.getElementById('dw2').innerHTML = "You were born on " + days[i];
             document.getElementById('akan').innerHTML = "Your Akan Name is " + male[i];
 
-        }else{
+        } else {
             document.getElementById('dw2').innerHTML = "You were born on " + days[i];
             document.getElementById('akan').innerHTML = "Your Akan Name is " + female[i];
 
         }
 
-        
+
 
 
 
@@ -84,4 +92,3 @@ function thisDate() {
     get_day();
 
 }
-
