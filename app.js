@@ -58,6 +58,7 @@ function thisDate() {
         }
     }
     yearValidation();
+    document.getElementById('todate').style.display="block"
 
     //function to get day
 
@@ -77,6 +78,7 @@ function thisDate() {
 
     }
     get_day();
+
 }
 
 // var day
