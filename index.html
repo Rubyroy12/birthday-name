@@ -22,7 +22,7 @@
 
         <h2>welcome...</h2>
         <p>Free and fast website</p>
-        <p>Know you day of wek when you were born with justa simple click</p> emoji
+        <p>Know you day of week when you were born with just a simple click &#128525</p> 
         <p>This website wil help you calculate the day of week you were born
             and also your supposed Akan name only using your date of birth.</p>
         <p>sounds intresting , right?</p>
@@ -30,15 +30,16 @@
 
 
 
-        <a class="btn btn-primary" href="#akan">Get started</a>
+        <a class="btn btn-primary" href="#akan" id="start">Get started</a>
+        <br>
 
-        <div class="card">
-            <p class="h2 text-white bg-info">Enter your date of birth</p>
+        <div class="card card-body">
+            <p class="h2 text-white bg-primary">Enter your date of birth</p>
 
             <!-- get date from the user  -->
-            Date (dd): <input id="date" placeholder="00">
+            Date (dd): <input id="date" name="date" placeholder="00">
             <p id="dval"></p>
-            Month (mm):<input id="month" placeholder="00">
+            Month (mm):<input id="month" name="month" placeholder="00">
             Year(yyyy):<input id="year" name="year" placeholder="1996">
             <br>
             <!-- Checkbox to get the gender -->
@@ -63,7 +64,11 @@
             <p>Akan Name: <span id="akan"></span></p>
 
         </div>
-        <div></div>
+        <div>
+            <footer class="card-footer d-flex justify-content-center">
+                <p>Copyright &#169 2021.  <a href="#start">Royaltech Solution Ltd.</a></p>
+            </footer>
+        </div>
 
 
 
