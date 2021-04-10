@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
 #todate{
     display: none;
     border-bottom: 2px solid blue;
     width: 15%;
+}
+#top{
+    background-color: rgb(13, 43, 83);
+    font-family:'Roboto''Ubuntu';
+}
+body{
+    background-color: rgb(213, 213, 214);
+
 }

@@ -18,7 +18,7 @@ function thisDate() {
             alert(" Valid date");
 
             document.getElementById("dt1").innerHTML = dd;
-            document.getElementById('date').style.border = ("0.8px solid black");
+            document.getElementById('date').style.border = ("1px solid rgb(25, 235, 6)");
 
         }
     }
@@ -38,6 +38,7 @@ function thisDate() {
             alert("Valid month");
 
             document.getElementById("dt2").innerHTML = mm;
+            document.getElementById('month').style.border = ("1px solid rgb(25, 235, 6)");
 
         }
     }
@@ -54,6 +55,7 @@ function thisDate() {
         } else {
             alert("Valid year");
             document.getElementById('dt3').innerHTML = yy;
+            document.getElementById('year').style.border = ("1px solid rgb(25, 235, 6)");
         }
     }
     yearValidation();
@@ -64,6 +66,7 @@ function thisDate() {
     function get_day() {
 
         var dy = (dd % 7)
+
 
         const i = dy.toFixed();
         let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

@@ -19,46 +19,56 @@
 <body>
     <div class="container">
 
+        <div class="bg- text-white card card-body lh-1" id="top">
+            <h2 class="text-white d-flex justify-content-center margin-top-20px">welcome...</h2>
+            <br>
 
-        <h2>welcome...</h2>
-        <p>Free and fast website</p>
-        <p>Know you day of week when you were born with just a simple click &#128525</p> 
-        <p>This website wil help you calculate the day of week you were born
-            and also your supposed Akan name only using your date of birth.</p>
-        <p>sounds intresting , right?</p>
+            <p>Free and fast website</p>
+            <p>Know your day of week when you were born with just a simple click &#128525</p>
+            <p>This website wil help you calculate the day of week you were born
+                and also your supposed Akan name only using your date of birth.</p>
+            <p>Sounds intresting , right?</p>
+
+        </div>
+        <br>
 
 
 
 
-        <a class="btn btn-primary" href="#akan" id="start">Get started</a>
+        <a class="btn btn-success" href="#akan" id="start">Get started</a>
         <br>
 
         <div class="card card-body">
-            <p class="h2 text-white bg-primary">Enter your date of birth</p>
+            <p class="h3 text-white bg-success">Enter your date of birth</p>
 
-            <!-- get date from the user  -->
-            Date (dd): <input id="date" name="date" placeholder="00">
-            <p id="dval"></p>
-            Month (mm):<input id="month" name="month" placeholder="00">
-            Year(yyyy):<input id="year" name="year" placeholder="1996">
+            <!-- get dates from the user  -->   
+            <form class="form-group" class="d-flex">
+                Date (dd): <input class="col-lg-2" type="number" id="date" name="date" placeholder="00">
+                Month (mm):<input class="col-lg-2" type="number" id="month" name="month" placeholder="00">
+                Year(yyyy):<input class="col-lg-2" type="number" id="year" name="year" placeholder="1996">
+            </form>
             <br>
             <!-- Checkbox to get the gender -->
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb1">
-                <label for="cb1" class="form-check-label">Male</label>
+            <div class="d-flex justify-content-center">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb1">
+                    <label for="cb1" class="form-check-label">Male</label>
 
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb2">
-                <label for="cb2" class="form-check-label">Female</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb2">
+                    <label for="cb2" class="form-check-label">Female</label>
 
+                </div>
+                
             </div>
+            <button class="btn btn-success" onclick="thisDate()">Submit</button>
             <!-- Display results -->
 
-            <button class="btn btn-success" onclick="thisDate()">Submit</button>
-            You entered date: <p id="todate"><span id="dt1"></span>/ <span id="dt2"></span> /<span id="dt3"></span></p>
 
-            <br>
+            <p>You entered date: <p id="todate"><span id="dt1"></span>/ <span id="dt2"></span> /<span id="dt3"></span>
+                </p>
+            </p>
 
             <p>Day of the week: <span id="dw2"></span> </p>
             <p>Akan Name: <span id="akan"></span></p>
@@ -66,7 +76,7 @@
         </div>
         <div>
             <footer class="card-footer d-flex justify-content-center">
-                <p>Copyright &#169 2021.  <a href="#start">Royaltech Solution Ltd.</a></p>
+                <p>Copyright &#169 2021. <a href="#start">Royaltech Solution Ltd.</a></p>
             </footer>
         </div>
 
