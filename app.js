@@ -11,11 +11,10 @@ function thisDate() {
 
         if (isNaN(dd) || dd < 1 || dd > 31) {
             alert("Invalid Date");
-            document.getElementById('date').value = " ";
+            document.getElementById('date').value = null;
             document.getElementById('date').style.border = ("1px solid red");
 
         } else {
-            alert(" Valid date");
 
             document.getElementById("dt1").innerHTML = dd;
             document.getElementById('date').style.border = ("1px solid rgb(25, 235, 6)");
@@ -30,12 +29,11 @@ function thisDate() {
 
         if (isNaN(mm) || mm < 1 || mm > 12) {
             alert("Invalid month");
-            document.getElementById('month').value = " ";
+            document.getElementById('month').value = null;
             document.getElementById('month').style.border = ("1px solid red");
 
 
         } else {
-            alert("Valid month");
 
             document.getElementById("dt2").innerHTML = mm;
             document.getElementById('month').style.border = ("1px solid rgb(25, 235, 6)");
@@ -53,7 +51,6 @@ function thisDate() {
             document.getElementById('year').value = " ";
             document.getElementById('year').style.border = ("1px solid red");
         } else {
-            alert("Valid year");
             document.getElementById('dt3').innerHTML = yy;
             document.getElementById('year').style.border = ("1px solid rgb(25, 235, 6)");
         }
@@ -65,8 +62,9 @@ function thisDate() {
 
     function get_day() {
 
+        
         var dy = (dd % 7)
-
+        
 
         const i = dy.toFixed();
         let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
