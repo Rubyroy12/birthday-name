@@ -1,5 +1,6 @@
 //Function to validate the form
 
+
 function thisDate() {
     var dd = Number(document.getElementById('date').value);
     var mm = Number(document.getElementById('month').value);
@@ -13,8 +14,10 @@ function thisDate() {
             alert("Invalid Date");
             document.getElementById('date').value = null;
             document.getElementById('date').style.border = ("1px solid red");
+            // return false;
 
         } else {
+
 
             document.getElementById("dt1").innerHTML = dd;
             document.getElementById('date').style.border = ("1px solid rgb(25, 235, 6)");
@@ -31,9 +34,11 @@ function thisDate() {
             alert("Invalid month");
             document.getElementById('month').value = null;
             document.getElementById('month').style.border = ("1px solid red");
+            return false;
 
 
         } else {
+
 
             document.getElementById("dt2").innerHTML = mm;
             document.getElementById('month').style.border = ("1px solid rgb(25, 235, 6)");
@@ -44,16 +49,19 @@ function thisDate() {
     //Function to validate year
     function yearValidation() {
 
-        //Logic 
+        //Logic to validate year
 
         if (isNaN(yy) || yy < 1950 || yy > 2021) {
             alert("Invalid year");
-            document.getElementById('year').value = " ";
+            document.getElementById('year').value = null;
             document.getElementById('year').style.border = ("1px solid red");
+            return false;
         } else {
+
             document.getElementById('dt3').innerHTML = yy;
             document.getElementById('year').style.border = ("1px solid rgb(25, 235, 6)");
         }
+
     }
     yearValidation();
     document.getElementById('todate').style.display = "block"
@@ -62,17 +70,19 @@ function thisDate() {
 
     function get_day() {
 
+        const i = (dd % 7);
         
-        var dy = (dd % 7)
+        // var dy = (dd % 7)
         
 
-        const i = dy.toFixed();
         let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
         let female = ["Akosua", "Adwoa", "Abena", "Akua", "Yaa", "Afua", "Ama"];
 
         var gender = document.querySelector("#cb1");
+
         //Logic to validate gender chosen 
+
         if (gender.checked) {
 
             document.getElementById('dw2').innerHTML = "You were born on " + days[i];
@@ -84,12 +94,21 @@ function thisDate() {
 
         }
 
-
-
-
-
-
     }
     get_day();
+
+}
+//Reset function
+
+function clear() {
+
+    document.getElementById("dt1").innerHTML = " ";
+    document.getElementById("dt2").innerHTML = " ";
+    document.getElementById('dt3').innerHTML = " ";
+    document.getElementById('dw2').innerHTML = " ";
+    document.getElementById('akan').innerHTML = " ";
+    document.getElementById('todate').style.display = "none";
+
+
 
 }
