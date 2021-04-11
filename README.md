@@ -11,6 +11,6 @@
 3. Bootstrap
 4. Javascript
 ## Live site
-- View[live]()
-License
+- View[live](https://rubyroy12.github.io/birthday-name/)
+## License
 - This project is under the [MIT](LICENSE.md)
