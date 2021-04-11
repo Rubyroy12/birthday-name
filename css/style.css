@@ -5,6 +5,9 @@
 }
 #top{
     background-color: rgb(34, 46, 37);
+    background-color: rgb(6, 32, 5);
+    border-bottom: 2px solid rgb(179, 177, 177);
+    box-shadow: 0 3px 3px gray   ;
     font-family:'Roboto''Ubuntu';
 }
 body{
@@ -16,6 +19,7 @@ body{
     width:50vw;
     display: flex;
     justify-content: center;
+   
 }
 #section{
     display: flex;
@@ -43,4 +47,8 @@ input {
     /* font-family: 'Courier New', Courier, monospace; */
     font-weight: bolder;
   
+}
+input{
+    display: flex;
+    width: 50%;
 }
