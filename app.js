@@ -71,6 +71,9 @@ function thisDate() {
     function get_day() {
 
         const i = (dd % 7);
+        
+        // var dy = (dd % 7)
+        
 
         let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
