@@ -5,10 +5,13 @@
     width: 15%;
 }
 #top{
-    background-color: rgb(13, 43, 83);
+    background-color: rgb(34, 46, 37);
     font-family:'Roboto''Ubuntu';
 }
 body{
     background-color: rgb(213, 213, 214);
 
+}
+#sbtn{
+    width: 10%;
 }

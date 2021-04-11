@@ -43,14 +43,16 @@
 
             <!-- get dates from the user  -->   
             <form class="form-group" class="d-flex">
-                Date (dd): <input class="col-lg-2" type="number" id="date" name="date" placeholder="00">
-                Month (mm):<input class="col-lg-2" type="number" id="month" name="month" placeholder="00">
-                Year(yyyy):<input class="col-lg-2" type="number" id="year" name="year" placeholder="1996">
+                Date (dd): <input class="col-lg-2" type="number" id="date" name="date" placeholder="00" required>
+                Month (mm):<input class="col-lg-2" type="number" id="month" name="month" placeholder="00" required>
+                Year(yyyy):<input class="col-lg-2" type="number" id="year" name="year" placeholder="1996" required>
             </form>
             <br>
             <!-- Checkbox to get the gender -->
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-start">
+                Choose your gender:
                 <div class="form-check">
+                   
                     <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb1">
                     <label for="cb1" class="form-check-label">Male</label>
 
@@ -62,7 +64,7 @@
                 </div>
                 
             </div>
-            <button class="btn btn-success" onclick="thisDate()">Submit</button>
+            <button class="btn btn-success" onclick="thisDate()" id="sbtn" class="d-flex justify-content-center">Submit</button>
             <!-- Display results -->
 
 
