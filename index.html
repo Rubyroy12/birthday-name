@@ -19,7 +19,7 @@
 <body>
     <div class="container">
 
-        <div class="bg- text-white card card-body lh-1" id="top">
+        <div class="bg- text-white card-body lh-1" id="top">
             <h2 class="text-white d-flex justify-content-center margin-top-20px">welcome...</h2>
             <br>
 
@@ -38,33 +38,41 @@
         <a class="btn btn-success" href="#akan" id="start">Get started</a>
         <br>
 
-        <div class="card card-body">
-            <p class="h3 text-white bg-success">Enter your date of birth</p>
+        <div class="card card-body" id="section">
+            <div class="card card-body d-flex justify-content-center" id="form">
 
-            <!-- get dates from the user  -->   
-            <form class="form-group" class="d-flex">
-                Date (dd): <input class="col-lg-2" type="number" id="date" name="date" placeholder="00" required>
-                Month (mm):<input class="col-lg-2" type="number" id="month" name="month" placeholder="00" required>
-                Year(yyyy):<input class="col-lg-2" type="number" id="year" name="year" placeholder="1996" required>
-            </form>
-            <br>
-            <!-- Checkbox to get the gender -->
-            <div class="d-flex justify-content-start">
-                Choose your gender:
-                <div class="form-check">
-                   
-                    <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb1">
-                    <label for="cb1" class="form-check-label">Male</label>
+                <p class="h3 text-white bg-success d-flex">Enter your date of birth</p>
+
+                <!-- get dates from the user  -->
+                <form>
+                    Date (dd): <input class="form-control" type="number" id="date" name="date" placeholder="00"
+                        required>
+                    Month (mm):<input class="form-control" type="number" id="month" name="month" placeholder="00"
+                        required>
+                    Year(yyyy):<input class="form-control" type="number" id="year" name="year" placeholder="1996"
+                        required>
+                </form>
+                <br>
+                <!-- Checkbox to get the gender -->
+                <div class="d-flex justify-content-start">
+                    Choose your gender:
+                    <div class="form-check">
+
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb1">
+                        <label for="cb1" class="form-check-label">Male</label>
+
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb2">
+                        <label for="cb2" class="form-check-label">Female</label>
+
+                    </div>
 
                 </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="flexRadioDefault" id="cb2">
-                    <label for="cb2" class="form-check-label">Female</label>
-
-                </div>
-                
+                <button class="btn btn-success" onclick="thisDate()" class="d-flex justify-content-center">Submit</button>
+                    <button class="btn btn-danger" onclick="clear()" class="d-flex">Clear</button>
             </div>
-            <button class="btn btn-success" onclick="thisDate()" id="sbtn" class="d-flex justify-content-center">Submit</button>
+
             <!-- Display results -->
 
 
@@ -72,8 +80,10 @@
                 </p>
             </p>
 
-            <p>Day of the week: <span id="dw2"></span> </p>
-            <p>Akan Name: <span id="akan"></span></p>
+            <div class="bg-success text-white card-body" id="display">
+                <p>Day of the week: <span id="dw2"></span> </p>
+                <p>Akan Name: <span id="akan"></span></p>
+            </div>
 
         </div>
         <div>
@@ -81,9 +91,6 @@
                 <p>Copyright &#169 2021. <a href="#start">Royaltech Solution Ltd.</a></p>
             </footer>
         </div>
-
-
-
 
 
     </div>

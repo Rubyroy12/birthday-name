@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
 #todate{
     display: none;
-    border-bottom: 2px solid blue;
-    width: 15%;
+    text-decoration: 2px solid rgb(55, 106, 245) underline;
 }
 #top{
     background-color: rgb(34, 46, 37);
@@ -12,6 +11,36 @@ body{
     background-color: rgb(213, 213, 214);
 
 }
-#sbtn{
-    width: 10%;
+
+#form{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+}
+#section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 800px){
+    #form{
+      width: 80%;
+    } 
+    #display{
+        width: 80%;
+    }
+}
+#display{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bolder;
+  
 }

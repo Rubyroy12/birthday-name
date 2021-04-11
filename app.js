@@ -1,5 +1,6 @@
 //Function to validate the form
 
+
 function thisDate() {
     var dd = Number(document.getElementById('date').value);
     var mm = Number(document.getElementById('month').value);
@@ -16,7 +17,7 @@ function thisDate() {
             // return false;
 
         } else {
-           
+
 
             document.getElementById("dt1").innerHTML = dd;
             document.getElementById('date').style.border = ("1px solid rgb(25, 235, 6)");
@@ -37,7 +38,7 @@ function thisDate() {
 
 
         } else {
-          
+
 
             document.getElementById("dt2").innerHTML = mm;
             document.getElementById('month').style.border = ("1px solid rgb(25, 235, 6)");
@@ -56,11 +57,11 @@ function thisDate() {
             document.getElementById('year').style.border = ("1px solid red");
             return false;
         } else {
-            
+
             document.getElementById('dt3').innerHTML = yy;
             document.getElementById('year').style.border = ("1px solid rgb(25, 235, 6)");
         }
-        
+
     }
     yearValidation();
     document.getElementById('todate').style.display = "block"
@@ -79,12 +80,12 @@ function thisDate() {
 
         //Logic to validate gender chosen 
 
-        if (gender.checked)  {
+        if (gender.checked) {
 
             document.getElementById('dw2').innerHTML = "You were born on " + days[i];
             document.getElementById('akan').innerHTML = "Your Akan Name is " + male[i];
 
-        } else{
+        } else {
             document.getElementById('dw2').innerHTML = "You were born on " + days[i];
             document.getElementById('akan').innerHTML = "Your Akan Name is " + female[i];
 
@@ -92,5 +93,19 @@ function thisDate() {
 
     }
     get_day();
+
+}
+//Reset function
+
+function clear() {
+
+    document.getElementById("dt1").innerHTML = " ";
+    document.getElementById("dt2").innerHTML = " ";
+    document.getElementById('dt3').innerHTML = " ";
+    document.getElementById('dw2').innerHTML = " ";
+    document.getElementById('akan').innerHTML = " ";
+    document.getElementById('todate').style.display = "none";
+
+
 
 }
