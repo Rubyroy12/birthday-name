@@ -11,6 +11,10 @@
 3. Bootstrap
 4. Javascript
 ## Live site
+<<<<<<< HEAD
 - View[live](https://rubyroy12.github.io/birthday-name/)
+=======
+- View [live](https://rubyroy12.github.io/birthday-name/)
+>>>>>>> gh-pages
 ## License
 - This project is under the [MIT](LICENSE.md)
