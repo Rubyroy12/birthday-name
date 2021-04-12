@@ -19,7 +19,8 @@ body{
     width:50vw;
     display: flex;
     justify-content: center;
-   
+    background-color: rgb(160, 160, 160);
+      
 }
 #section{
     display: flex;
@@ -51,4 +52,13 @@ input {
 input{
     display: flex;
     width: 50%;
+}
+
+#section{
+    background-image:url(/images/livingadream.jpg);
+}
+#dw2,#akan{
+    color: rgb(255, 217, 47);
+    font-weight: bolder;
+    font-size: large;
 }
