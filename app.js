@@ -70,10 +70,24 @@ function thisDate() {
 
     function get_day() {
 
-        const i = (dd % 7);
-        
-        // var dy = (dd % 7)
-        
+       let inputteddate= mm+"/"+ dd +"/"+ yy;
+        let mydate = new Date(inputteddate);
+        // let date = mydate.getDate();
+        let year = mydate.getFullYear();
+        let month = mydate.getMonth() + 1;
+        let day = mydate.getDay();
+        document.querySelector('#thisDate').innerHTML = mydate;
+        document.getElementById('year').innerHTML= year;
+        document.getElementById("month").innerHTML=month;
+        document.getElementById("day").innerHTML= day;
+
+    
+
+
+
+
+        // const i = (date % 7);  
+         const i= day;
 
         let days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         let male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
